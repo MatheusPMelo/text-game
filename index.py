@@ -1,12 +1,12 @@
 #!/usr/bin/python
-from textGame import game
+from part1 import wake
 import os
 
 def menu():
-    print('===============MENU=============')
-    print('# 1 => Iniciar*****************#')
-    print('# 2 => Sair********************#')
-    print('================================')
+    print('===========MENU===========')
+    print('# 1 => Iniciar***********#')
+    print('# 2 => Sair**************#')
+    print('==========================')
 
 
 while True:
@@ -22,7 +22,8 @@ while True:
 
     elif command == '1':
         #se eu caio aqui quero ir pra outro lugar
-        game()
+        wake()
+        break
 
     elif command == '2':
         os.system('clear')
