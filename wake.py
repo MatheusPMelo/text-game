@@ -2,10 +2,10 @@
 
 import os
 from helpers import *
-from actions import *
+from action1 import *
 
 def menu():
-    os.system('clear')
+    clear()
     print('==========================')
     print('# 1 - Acordar************#')
     print('# 2 - Voltar a dormir****#')
@@ -17,7 +17,7 @@ def wake():
         command =input('Comando => ')
 
         if command not in ['1','2']:
-            os.system('clear')
+            clear()
             print('Digite um comando válido')
             os.system('sleep 2')
 

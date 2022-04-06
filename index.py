@@ -1,5 +1,6 @@
 #!/usr/bin/python
-from part1 import wake
+from wake import wake
+from helpers import *
 import os
 
 def menu():
@@ -10,7 +11,7 @@ def menu():
 
 
 while True:
-    os.system('clear')
+    clear()
     menu()
     command = input('Comando => ')
 
@@ -26,13 +27,13 @@ while True:
         break
 
     elif command == '2':
-        os.system('clear')
+        clear()
         print('saindo...')
         os.system('sleep 1')
-        os.system('clear')
+        clear()
         break
         
-for i in range(4):
+for i in range(5):
 
     #FRAME 1
     print('_________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_________________')
@@ -70,8 +71,8 @@ for i in range(4):
     print('________________¶_______________¶_________________')
     print('________________¶¶¶____________¶__________________')
     print('_________________¶¶¶¶¶¶¶¶¶¶¶¶¶____________________')
-    os.system('sleep .4')
-    os.system('clear')
+    os.system('sleep .3')
+    clear()
 
     #FRAME 2
     print('_________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_________________')
@@ -110,5 +111,5 @@ for i in range(4):
     print('________________¶_______________¶_________________')
     print('________________¶¶¶____________¶__________________')
     print('_________________¶¶¶¶¶¶¶¶¶¶¶¶¶____________________')
-    os.system('sleep .4')
-    os.system('clear')
+    os.system('sleep .3')
+    clear()
