@@ -2,7 +2,7 @@ import os
 
 
 def clear():
-    return os.system('cls')
+    return os.system('clear')
     
 def pressContinue():
     print('')
@@ -13,10 +13,15 @@ def pressContinue():
 def command():
     return input('Comando => ')
 
-def menuYesNo():
-    print('')
-    print('')
-    print('==========================')
-    print('# 1 - SIM****************#')
-    print('# 2 - NÃO****************#')
-    print('==========================')
+def menuRolo():
+    print('\n========AKA MANTO=========')
+    print('# 1 => VERMELHO ******** #')
+    print('# 2 => AZUL ************ #')
+    print('========================== \n')
+
+def menuRoloInv():
+    print('\n=========INVÁLIDO=========')
+    print('# 1 => VERMELHO ******** #')
+    print('# 2 => AZUL ************ #')
+    print('========================== \n')
+

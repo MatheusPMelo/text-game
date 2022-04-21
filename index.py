@@ -1,13 +1,14 @@
 #!/usr/bin/python
-from wake import wake
+import time
+from action1 import action1
 from helpers import *
 import os
 
 def menu():
-    print('===========MENU===========')
-    print('# 1 => Iniciar***********#')
-    print('# 2 => Sair**************#')
-    print('==========================')
+    print('\n========AKA MANTO=========')
+    print('# 1 => Iniciar ********* #')
+    print('# 2 => Sair ************ #')
+    print('========================== \n')
 
 
 while True:
@@ -18,18 +19,18 @@ while True:
     if command not in ['1', '2']:
         os.system('clear')
         print('Comando Inválido! Tente novamente...')
-        os.system('sleep 2')
+        time.sleep(2)
         os.system('clear')
 
     elif command == '1':
         #se eu caio aqui quero ir pra outro lugar
-        wake()
+        action1()
         break
 
     elif command == '2':
         clear()
         print('saindo...')
-        os.system('sleep 1')
+        time.sleep(2)
         clear()
         break
         
@@ -71,7 +72,7 @@ for i in range(5):
     print('________________¶_______________¶_________________')
     print('________________¶¶¶____________¶__________________')
     print('_________________¶¶¶¶¶¶¶¶¶¶¶¶¶____________________')
-    os.system('sleep .3')
+    time.sleep(.4)
     clear()
 
     #FRAME 2
@@ -104,12 +105,12 @@ for i in range(5):
     print('___________¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶______¶¶______')
     print('___________¶__¶_¶¶_¶¶¶_¶¶¶_¶¶¶____¶_______¶_______')
     print('____________¶¶_¶_¶¶¶__¶_¶¶¶_¶_¶__¶____¶¶¶_________')
-    print('____________¶_______HA HA HA__________¶___________')
+    print('____________¶____¶__HA HA HA_¶¶_______¶___________')
     print('_____________¶__¶¶_¶__¶_¶_¶_¶¶¶¶¶____¶¶___________')
     print('______________¶__¶_¶¶_¶_¶¶¶¶¶__¶¶__¶¶_____________')
     print('_______________¶¶________________¶________________')
     print('________________¶_______________¶_________________')
     print('________________¶¶¶____________¶__________________')
     print('_________________¶¶¶¶¶¶¶¶¶¶¶¶¶____________________')
-    os.system('sleep .3')
+    time.sleep(.4)
     clear()

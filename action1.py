@@ -1,46 +1,47 @@
-import os
 from helpers import *
 
 def action1():
     while True:
         clear()
-        print('Você abre seus olhos cansados e se senta na cama...')
+        print('Você está estremamente apertado para ir um banheiro...')
         pressContinue()
-        print('Você nota que está tudo normal exceto uma coisa...')
+        print('Você entra correndo numa rodoviária e econtra o banheiro mais próximo...')
         pressContinue()
-        print('A porta do seu closet está entre aberta...')
+        print('Você entra tão rápido que não repara um coisa...')
         pressContinue()
-        print('(Levanto para fecha-la?)')
-        menuYesNo()
+        print('Está sem papel higiênico...')
+        pressContinue()
+        print('Mas como se estivesse esperando alguém de repente oferece para você...')
+        pressContinue()
+        print('A pessoa misteriosa pergunta:...')
+        pressContinue()
+        print('Você quer o rolo VERMELHO ou o rolo AZUL? \n')
+
+        menuRolo()
+
         cmd = command()
+
 
         if cmd not in ['1','2']:
             while cmd not in ['1', '2']:
                 clear()
-                print('commando inválido')
-                print('(Levanto para fecha-la?)')
-                menuYesNo()
-                cmdw = command()
+                print('commando inválido \n')
 
-                if cmdw == '1':
-                    
-                    break
-                        
-                elif cmdw == '2':
-                    clear()
-                    print('Escolhei 2')
-                    os.system('sleep 2')
-                    break
+                menuRolo()
+
+                cmd = command()
+
+                exit()
                 
 
         if cmd == '1':
             clear()
-            print('Você fechou a porta e sentiu um frio subto...')
+            print('Você escolheu VERMELHO')
             pressContinue()
             break
         
         elif cmd == '2':
             clear()
-            print('Escolhei 2')
-            os.system('sleep 2')
+            print('Você escolheu AZUL')
+            pressContinue()
             break
