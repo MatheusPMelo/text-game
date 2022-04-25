@@ -18,9 +18,8 @@ def action1():
         print('A pessoa misteriosa pergunta:...')
         pressContinue()
         print('Você quer o rolo VERMELHO ou o rolo AZUL? \n')
-
+        
         menuRolo()
-
         cmd = command()
 
 
