@@ -1,4 +1,6 @@
 from helpers import *
+from vermelho import *
+from azul import *
 
 def action1():
     while True:
@@ -26,22 +28,19 @@ def action1():
             while cmd not in ['1', '2']:
                 clear()
                 print('commando inválido \n')
-
                 menuRolo()
-
                 cmd = command()
-
                 exit()
                 
 
         if cmd == '1':
             clear()
-            print('Você escolheu VERMELHO')
+            vermelho()
             pressContinue()
             break
         
         elif cmd == '2':
             clear()
-            print('Você escolheu AZUL')
+            azul()
             pressContinue()
             break
