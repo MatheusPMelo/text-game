@@ -16,22 +16,31 @@ while True:
     menu()
     command = input('Comando => ')
 
-    if command not in ['1', '2']:
+    if command not in ['1', '2', '0']:
         os.system('clear')
         print('Comando Inválido! Tente novamente...')
         time.sleep(2)
         os.system('clear')
 
     elif command == '1':
-        #se eu caio aqui quero ir pra outro lugar
         action1()
         break
 
-    elif command == '2':
-        clear()
-        print('saindo...')
-        time.sleep(2)
-        clear()
+    elif command == '2' :
+        for i in range(3) :
+            clear()
+            print('saindo.')
+            time.sleep(.4)
+            clear()
+            print('saindo..')
+            time.sleep(.4)
+            clear()
+            print('saindo...')
+            time.sleep(.4)
+            clear()
+            print('saindo..')
+            time.sleep(.4)
+            clear()
         break
         
 for i in range(5):
@@ -105,7 +114,7 @@ for i in range(5):
     print('___________¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶______¶¶______')
     print('___________¶__¶_¶¶_¶¶¶_¶¶¶_¶¶¶____¶_______¶_______')
     print('____________¶¶_¶_¶¶¶__¶_¶¶¶_¶_¶__¶____¶¶¶_________')
-    print('____________¶____¶__HA HA HA_¶¶_______¶___________')
+    print('____________¶____¶__HA_HA_HA_¶¶_______¶___________')
     print('_____________¶__¶¶_¶__¶_¶_¶_¶¶¶¶¶____¶¶___________')
     print('______________¶__¶_¶¶_¶_¶¶¶¶¶__¶¶__¶¶_____________')
     print('_______________¶¶________________¶________________')
