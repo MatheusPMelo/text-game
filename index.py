@@ -2,7 +2,6 @@
 import time
 from action1 import action1
 from helpers import *
-import os
 
 def menu():
     print('\n========AKA MANTO=========')
@@ -12,15 +11,16 @@ def menu():
 
 
 while True:
+    getSys()
     clear()
     menu()
     command = input('Comando => ')
 
     if command not in ['1', '2', '0']:
-        os.system('clear')
+        clear()
         print('Comando Inválido! Tente novamente...')
         time.sleep(2)
-        os.system('clear')
+        clear()
 
     elif command == '1':
         action1()

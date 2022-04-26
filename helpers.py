@@ -1,9 +1,34 @@
 import os
+import sys
 import time
 
+def menuSys() :
+    print('\n==SELECIONE SEU SISTEMA==')
+    print('# 1 => WINDOWS ******** #')
+    print('# 2 => LINUX/MAC ****** #')
+    print('========================= \n')
+
+def getSys() :
+    menuSys()
+    sys = command()
+
+    if sys not in ['1', '2'] :
+        while sys not in ['1', '2']:
+            clear()
+            print('commando inválido \n')
+            menuSys()
+            sys = command()
+            exit()
+
+    elif sys == '1' :
+        return os.system('cls')
+    
+    elif sys == '2' :
+        return os.system('clear')
+        
 
 def clear():
-    return os.system('clear')
+    return sys
     
 def pressContinue():
     print('')
